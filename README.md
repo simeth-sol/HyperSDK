@@ -192,10 +192,10 @@ When you are done, the output should look something like this:
 ```
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
-chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-metadata (can be changed later): MarioCoin
+chainID: NZS56fQ8ZnYFGLPfRjCsYzdLks84zzV7MuMAYRqyeFMQhpDdX
+metadata (can be changed later): CiscoCoin
 continue (y/n): y
-✅ txID: 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
+✅ txID: hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3
 ```
 
 _`txID` is the `assetID` of your new asset._
@@ -215,13 +215,13 @@ just to mint to yourself).
 ```
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
-chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-assetID: 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-metadata: MarioCoin supply: 0
+chainID: NZS56fQ8ZnYFGLPfRjCsYzdLks84zzV7MuMAYRqyeFMQhpDdX
+✔ assetID: hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3█
+metadata: CiscoCoin supply: 0
 recipient: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
 amount: 10000
-continue (y/n): y
-✅ txID: X1E5CVFgFFgniFyWcj5wweGg66TyzjK2bMWWTzFwJcwFYkF72
+✔ continue (y/n): y█
+✅ txID: 2eKxTLzFPuq3M9qu3wmffDzvVfPigrRrYSiiLsVFvfcuDRouG4
 ```
 
 #### Step 3: View Your Balance
@@ -235,14 +235,15 @@ When you are done, the output should look something like this:
 ```
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
-chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-assetID (use TKN for native token): 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-metadata: MarioCoin supply: 10000 warp: false
-balance: 10000 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
+chainID: NZS56fQ8ZnYFGLPfRjCsYzdLks84zzV7MuMAYRqyeFMQhpDdX
+assetID (use TKN for native token): hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3
+uri: http://127.0.0.1:58972/ext/bc/NZS56fQ8ZnYFGLPfRjCsYzdLks84zzV7MuMAYRqyeFMQhpDdX
+metadata: CiscoCoin supply: 10000 warp: false
+balance: 10000 hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3
 ```
 
 #### Step 4: Create an Order
-So, we have some of our token (`MarioCoin`)...now what? Let's put an order
+So, we have some of our token (`CiscoCoin`)...now what? Let's put an order
 on-chain that will allow someone to trade the native token (`TKN`) for some.
 You can do so by running the following command from this location:
 ```bash
@@ -253,16 +254,16 @@ When you are done, the output should look something like this:
 ```
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
-chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-in assetID (use TKN for native token): TKN
-✔ in tick: 1█
-out assetID (use TKN for native token): 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-metadata: MarioCoin supply: 10000 warp: false
-balance: 10000 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-out tick: 10
+chainID: NZS56fQ8ZnYFGLPfRjCsYzdLks84zzV7MuMAYRqyeFMQhpDdX
+✔ in assetID (use TKN for native token): TKN█
+in tick: 1
+out assetID (use TKN for native token): hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3
+metadata: CiscoCoin supply: 10000 warp: false
+balance: 10000 hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3
+✔ out tick: 10█
 supply (must be multiple of out tick): 100
-continue (y/n): y
-✅ txID: 2TdeT2ZsQtJhbWJuhLZ3eexuCY4UP6W7q5ZiAHMYtVfSSp1ids
+✔ continue (y/n): y█
+✅ txID: 2DuR8wyqs3GRbWQGH8qCw8hVdPJkDkYbfNDQyvmYYCQm69Ehes
 ```
 
 _`txID` is the `orderID` of your new order._
@@ -283,18 +284,18 @@ When you are done, the output should look something like this:
 ```
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
-chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
+chainID: NZS56fQ8ZnYFGLPfRjCsYzdLks84zzV7MuMAYRqyeFMQhpDdX
 in assetID (use TKN for native token): TKN
-balance: 997.999993843 TKN
-out assetID (use TKN for native token): 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-metadata: MarioCoin supply: 10000 warp: false
+balance: 999.999998631 TKN
+✔ out assetID (use TKN for native token): hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3█
+metadata: CiscoCoin supply: 10000 warp: false
 available orders: 1
-0) Rate(in/out): 100000000.0000 InTick: 1.000000000 TKN OutTick: 10 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug Remaining: 100 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-select order: 0
-value (must be multiple of in tick): 2
-in: 2.000000000 TKN out: 20 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
-continue (y/n): y
-✅ txID: uw9YrZcs4QQTEBSR3guVnzQTFyKKm5QFGVTvuGyntSTrx3aGm
+0) Rate(in/out): 100000000.0000 InTick: 1.000000000 TKN OutTick: 10 hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3 Remaining: 100 hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3
+✔ select order: 0█
+value (must be multiple of in tick): 4
+in: 4.000000000 TKN out: 40 hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3
+✔ continue (y/n): y█
+✅ txID: 2JhSCW8itbah6tnKCsZADsP77368dpjgHtW3hvA2tksKeeNchZ
 ```
 
 Note how all available orders for this pair are listed by the CLI (these come
@@ -312,11 +313,11 @@ When you are done, the output should look something like this:
 ```
 database: .token-cli
 address: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp
-chainID: Em2pZtHr7rDCzii43an2bBi1M2mTFyLN33QP1Xfjy7BcWtaH9
-orderID: 2TdeT2ZsQtJhbWJuhLZ3eexuCY4UP6W7q5ZiAHMYtVfSSp1ids
-out assetID (use TKN for native token): 27grFs9vE2YP9kwLM5hQJGLDvqEY9ii71zzdoRHNGC4Appavug
+chainID: NZS56fQ8ZnYFGLPfRjCsYzdLks84zzV7MuMAYRqyeFMQhpDdX
+orderID: 2DuR8wyqs3GRbWQGH8qCw8hVdPJkDkYbfNDQyvmYYCQm69Ehes
+out assetID (use TKN for native token): hAEeRVDFYY3UD1XWJrmD8ohEGchjov4Gig1xkc9jKYkpdxwp3
 continue (y/n): y
-✅ txID: poGnxYiLZAruurNjugTPfN1JjwSZzGZdZnBEezp5HB98PhKcn
+✅ txID: pA1oacXy5dDFSPspyFxmr9gfowopmCmvPT2VjMRM6eQgJ33PH
 ```
 
 Any funds that were locked up in the order will be returned to the creator's
